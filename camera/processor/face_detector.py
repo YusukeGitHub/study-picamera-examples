@@ -36,7 +36,7 @@ class FaceDetector(object):
         # detectMultiScaleメソッドで処理し、認識した顔の座標情報を取得する
         faces = self.face_cascade.detectMultiScale(gray, 1.3, 3)
         
-        cv2.putText(frame,'test',(10,10),cv2.FONT_HERSHEY_SIMPLEX,4,(255,0,0),2,cv2.LINE_AA)
+        cv2.putText(frame,'test',(100,100),cv2.FONT_HERSHEY_SIMPLEX,4,(255,0,0),2,cv2.LINE_AA)
         # 取得した座標情報を元に、cv2.rectangleを使ってframe上に
         # 顔の位置を描画する                    
         for (x,y,w,h) in faces:
